@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+<head><title>CS400</title></head>
+<body>
+  <header><h1>CS400</h1></header>
+  <p>write something about yourself 
+  fact or fiction is fine – but not too personal for the W3</p>
+   <header><h2>My favorite things:</h2></header>
+    <p> playing basketball</p>
+    <p> eating delicious food</p>
+  <img src="image.png" 
+      alt="it is a image" width="100" height="50" />
+  <footer>Hangzhou-my hometown</footer>
+  
+<table>
+  <tr><th>Name</h><td>e-mail</td></tr>   
+  <tr><th>Zhan Yu</h><td>zyu293@wisc.edu</td></tr>   
+</table>
+<input  id="button" type="button" value="CHANGE" onclick="buttonClick();"> 
+<script>  
+        function buttonClick(){  
+          var randomNum = generate_random_number();
+          function generate_random_number(){
+    let num_low = 1;
+    let num_high = 9;
+    return Math.floor((Math.random() * (num_high - num_low)) + num_low);
+}
+            replaceButtonText('button', randomNum);
+        }  
+    </script>  
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+function replaceButtonText(buttonId, text)
+{
+  if (document.getElementById)
+  {
+    var button=document.getElementById(buttonId);
+    if (button)
+    {
+      if (button.childNodes[0])
+      {
+        button.childNodes[0].nodeValue=text;
+      }
+      else if (button.value)
+      {
+        button.value=text;
+      }
+      else //if (button.innerHTML)
+      {
+        button.innerHTML=text;
+      }
+    }
+  }
+}
+//-->
+</SCRIPT>
+<footer>
+  <p><a href="https://about.google/intl/en_us/products/">Google products page</a>
+  </footer>
+  </body>
+</html>
